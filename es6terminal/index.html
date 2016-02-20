@@ -1,38 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <!-- Required meta tags always come first -->
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>es6terminal Demo Page</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" media="screen" charset="utf-8">
         <link rel="stylesheet" href="https://rawgit.com/senritsu/es6terminal/master/public/es6terminal.css" media="screen" charset="utf-8">
     </head>
     <body>
-        <p>es6terminal Demo</p>
+        <div class="container">
+            <h1>es6terminal Demo</h1>
 
-        <span>Theme selection</span>
-        <button id="default" class="theme-switch-button">Default</button>
-        <button id="amber" class="theme-switch-button">Amber</button>
-        <button id="green" class="theme-switch-button">Green</button>
-        <button id="c64" class="theme-switch-button">C64</button>
-        <button id="char-custom" class="theme-switch-button">Char Custom</button>
-        <div style="width: 600px; height: 250px;" class="terminal-host"></div>
-        <button id="start-interactive">Start echo mode</button>
-        <button id="stop-interactive">Stop echo mode</button>
-        <button id="echo-prompt">Echo prompt</button>
-        <button id="alert-prompt">Alert prompt</button>
+            <label>Theme selection</label>
+            <div id="theme-buttons" class="btn-group" role="group" aria-label="Theme selection buttons">
+                <button id="default" class="btn btn-primary">Default</button>
+                <button id="amber" class="btn btn-secondary">Amber</button>
+                <button id="green" class="btn btn-secondary">Green</button>
+                <button id="c64" class="btn btn-secondary">C64</button>
+                <button id="char-custom" class="btn btn-secondary">Char Custom</button>
+            </div>
+
+            <div style="width: 600px; height: 250px; margin: auto;" class="terminal-host"></div>
+
+            <div>
+                <button id="start-interactive" class="btn btn-secondary">Start echo mode</button>
+                <button id="stop-interactive" class="btn btn-secondary">Stop echo mode</button>
+                <button id="echo-prompt" class="btn btn-secondary">Echo prompt</button>
+                <button id="alert-prompt" class="btn btn-secondary">Alert prompt</button>
+            </div>
+        </div>
+
         <script src="https://rawgit.com/senritsu/es6terminal/master/public/es6terminal.js" charset="utf-8"></script>
         <script type="text/javascript">
             'use strict';
             var terminal = new Terminal(document.querySelector('.terminal-host'))
-            
+
             terminal.writeLine('Welcome to the es6terminal demo')
             terminal.prompt({
                 message: 'Enter your name:',
                 handler: (x) => `Hello ${x}!\nFeel free to try out the various buttons and interactions.`
             })
 
-            const buttons = document.querySelectorAll('.theme-switch-button')
+            const buttons = document.querySelectorAll("#theme-buttons button")
             Array.from(buttons).forEach((button) => {
-                button.addEventListener('click', () => document.querySelector('.terminal-background').setAttribute('theme', button.id))
+                button.addEventListener('click', () => {
+                    Array.from(buttons).forEach((x) => {
+                        x.classList.remove('btn-primary')}
+                        x.classList.add('btn-secondary')
+                    )
+                    button.classList.remove('btn-secondary')}
+                    button.classList.add('btn-primary')
+                    document.querySelector('.terminal-background').setAttribute('theme', button.id)
+                })
             })
             document.querySelector('#start-interactive').addEventListener('click', () => terminal.startInteractive({handler: (x) => 'You entered: ' + x}))
             document.querySelector('#stop-interactive').addEventListener('click', () => terminal.stopInteractive())
