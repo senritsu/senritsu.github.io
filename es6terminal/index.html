@@ -47,10 +47,10 @@
             Array.from(buttons).forEach((button) => {
                 button.addEventListener('click', () => {
                     Array.from(buttons).forEach((x) => {
-                        x.classList.remove('btn-primary')}
+                        x.classList.remove('btn-primary')
                         x.classList.add('btn-secondary')
-                    )
-                    button.classList.remove('btn-secondary')}
+                    )}
+                    button.classList.remove('btn-secondary')
                     button.classList.add('btn-primary')
                     document.querySelector('.terminal-background').setAttribute('theme', button.id)
                 })
