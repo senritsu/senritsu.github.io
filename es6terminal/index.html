@@ -23,7 +23,12 @@
         <script type="text/javascript">
             'use strict';
             var terminal = new Terminal(document.querySelector('.terminal-host'))
-            terminal.startInteractive(terminal.echoHandler)
+            
+            terminal.writeLine('Welcome to the es6terminal demo')
+            terminal.prompt({
+                message: 'Enter your name:',
+                handler: (x) => `Hello ${x}!\nFeel free to try out the various buttons and interactions.`
+            })
 
             const buttons = document.querySelectorAll('.theme-switch-button')
             Array.from(buttons).forEach((button) => {
