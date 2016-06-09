@@ -876,3 +876,6 @@ pre .javascript .function {
 .jiathis_style .ckepopBottom {
   padding: 5px;
 }
+.sidebar .avatar img {
+  background-color: #fff;
+}
