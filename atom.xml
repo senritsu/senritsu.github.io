@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>senritsu.github.io</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://senritsu.github.io/"/>
+  <updated>2016-06-09T12:00:55.644Z</updated>
+  <id>http://senritsu.github.io/</id>
+  
+  <author>
+    <name>senritsu</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Introduction</title>
+    <link href="http://senritsu.github.io/2016/06/09/Introduction/"/>
+    <id>http://senritsu.github.io/2016/06/09/Introduction/</id>
+    <published>2016-06-09T12:16:46.000Z</published>
+    <updated>2016-06-09T12:00:55.644Z</updated>
+    
+    <content type="html">&lt;p&gt;Welcome to this newly created blog. As i haven’t thought of a good name yet, the github pages domain will have to do ಠ_ಠ&lt;/p&gt;
+&lt;p&gt;The primary goal is to have a place for publishing programming tutorials and related explanations. Having written quite a lot on reddit and in private exchanges, this allows me to put it in a more structured form and make it accessible to the public.&lt;/p&gt;
+&lt;p&gt;It also doubles as a central place for hosting code examples for github repositories or other projects.&lt;/p&gt;
+&lt;p&gt;Enjoy your stay~!&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to this newly created blog. As i haven’t thought of a good name yet, the github pages domain will have to do ಠ_ಠ&lt;/p&gt;
+&lt;p&gt;The prima
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
