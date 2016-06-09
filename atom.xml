@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://senritsu.github.io/"/>
-  <updated>2016-06-09T12:00:55.644Z</updated>
+  <updated>2016-06-09T19:19:22.132Z</updated>
   <id>http://senritsu.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://senritsu.github.io/2016/06/09/Introduction/"/>
     <id>http://senritsu.github.io/2016/06/09/Introduction/</id>
     <published>2016-06-09T12:16:46.000Z</published>
-    <updated>2016-06-09T12:00:55.644Z</updated>
+    <updated>2016-06-09T19:19:22.132Z</updated>
     
     <content type="html">&lt;p&gt;Welcome to this newly created blog. As i haven’t thought of a good name yet, the github pages domain will have to do ಠ_ಠ&lt;/p&gt;
 &lt;p&gt;The primary goal is to have a place for publishing programming tutorials and related explanations. Having written quite a lot on reddit and in private exchanges, this allows me to put it in a more structured form and make it accessible to the public.&lt;/p&gt;
@@ -35,6 +35,8 @@
     
     </summary>
     
+    
+      <category term="ramblings" scheme="http://senritsu.github.io/tags/ramblings/"/>
     
   </entry>
   
